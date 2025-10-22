@@ -1,0 +1,13 @@
+/*
+  Marketing Styles - Fully Nested
+  First one where I realised I probably didnt need to be importing 
+  all of these and instead could have been left in main
+  but if we ever needed to add more its simpler to find this way
+*/
+
+.marketing {
+  position: relative;
+  & header h2 {
+    font-size: 1.6em;
+  }
+}

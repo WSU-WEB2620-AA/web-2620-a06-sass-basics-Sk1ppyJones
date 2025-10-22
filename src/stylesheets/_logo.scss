@@ -1,0 +1,13 @@
+// logo styles - fully nested
+
+.logo {
+  position: absolute;
+  left: 0em;
+  top: 3em;
+  & a {
+    display: block;
+    text-decoration: none;
+    font-size: 2.8em;
+    font-weight: 600;
+  }
+}

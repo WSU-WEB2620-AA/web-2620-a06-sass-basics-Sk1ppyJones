@@ -1,0 +1,43 @@
+@use "colors";
+/* 
+  Nav Class - Main class where we see rules that could go under other
+  filed like unorderedLists, wasnt done for 2 reasons, the first being
+  assignment requirements and the second being this shows another way to handle how you do the imports
+  of html element vs group
+*/
+.nav {
+  position: absolute;
+  right: 0em;
+  top: 2.2em;
+
+  & ul {
+    list-style-type: none;
+  }
+
+  & ul li {
+    float: left;
+  }
+
+  & ul li:last-child {
+    padding-right: 0;
+  }
+
+  & ul li a,
+  & ul li span {
+    display: block;
+    margin-left: 0.7em;
+    padding: 0.8em 1.2em;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    outline: 0;
+    color: colors.$dark-gray;
+  }
+
+  & li.active a {
+    background: colors.$blue;
+    border-radius: 5px;
+    color: colors.$true-white;
+  }
+}

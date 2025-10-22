@@ -1,0 +1,16 @@
+@use "colors";
+// featured styles - fully nested
+
+.featured {
+  position: relative;
+  & .divider {
+    border-bottom: 1px solid colors.$dark-gray;
+  }
+
+  & .box {
+    background: colors.$true-white;
+    padding: 1.4em;
+    font-size: 0.95em;
+    border-radius: 5px;
+  }
+}

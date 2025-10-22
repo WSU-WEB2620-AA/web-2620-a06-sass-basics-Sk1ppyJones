@@ -1,0 +1,81 @@
+@use "colors";
+//Unordered List Styles - Fully Nested
+ul {
+  &.default {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &.default li {
+    display: block;
+    padding: 2em 0em 1.25em 0em;
+    border-top: 1px solid colors.$dark-gray;
+  }
+
+  &.default li:first-child {
+    padding-top: 0em;
+    border-top: none;
+  }
+
+  &.default a {
+    text-decoration: none;
+    color: colors.$light-gray;
+  }
+
+  &.default a:hover {
+    text-decoration: underline;
+  }
+
+  &.style1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &.style1 li {
+    padding: 0.6em 0em;
+    border-top: 1px solid;
+    border-color: colors.$black-transparent;
+  }
+
+  &.style1 li:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  &.style2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &.style2 li {
+    padding: 1.9em 0em 1.6em 0em;
+    border-top: 1px solid;
+    border-color: colors.$black-transparent;
+  }
+
+  &.style2 li:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  &.style2 img {
+    float: left;
+    padding-right: 1em;
+  }
+
+  &.style5 {
+    overflow: hidden;
+    margin: 0em 0em 1em 0em;
+    padding: 0em;
+    list-style: none;
+  }
+
+  &.style5 li {
+    float: left;
+    padding: 0.25em 0.25em;
+    line-height: 0;
+  }
+}

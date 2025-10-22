@@ -1,0 +1,13 @@
+// column styles - fully nested
+
+$column-numbers: 1 2 3 4 5 6 7 8 9 10 11 12; // list so we can use the for loop
+
+@for $i from 1 through length($column-numbers) {
+  // for loop that iterates through the list length creating classes for each based off given calc
+  .column-#{$i} {
+    width: 100%;
+    @media all and (min-width: 576px) {
+      width: calc(100% / 12) * $i;
+    }
+  }
+}

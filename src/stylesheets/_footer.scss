@@ -1,0 +1,18 @@
+@use "colors";
+//footer styles - fully nested but has both the class and element
+footer {
+  margin-top: 1em;
+}
+.footer {
+  position: relative;
+  color: colors.$light-gray;
+  & h2 {
+    padding-bottom: 1.5em;
+    font-size: 1.6em;
+    color: colors.$true-white;
+  }
+
+  & strong {
+    color: colors.$light-gray;
+  }
+}

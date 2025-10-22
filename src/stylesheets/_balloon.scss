@@ -1,0 +1,17 @@
+@use "colors";
+// Balloon Styles
+.balloon {
+  padding: 1.87em;
+  background: url("/images/balloon-bg.jpg") repeat left top;
+  border-radius: 5px;
+  line-height: 180%;
+  font-size: 1.2em;
+  color: colors.$dark-gray;
+  & strong {
+    color: colors.$dark-gray !important;
+  }
+}
+// Balloon style- not nested since its a separet class and not a child class
+.ballon-bgbtm {
+  height: 1.87em;
+}

@@ -1,0 +1,28 @@
+/*
+  Section & Article Styles
+  This was originally meant to be one nested
+  class but when I tried to use the nesting method 
+  it didnt recognize the article and had them all act under section
+  Possible I didnt do it right but I just separated them into
+  separate parent classes.
+*/
+
+section {
+  margin-bottom: 3em;
+  & > :last-child {
+    margin-bottom: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+article {
+  margin-bottom: 3em;
+  & > :last-child {
+    margin-bottom: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
